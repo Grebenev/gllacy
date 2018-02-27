@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Konstantin Grebenev](https://up.htmlacademy.ru/htmlcss/20/user/536017).
-* Наставник: [Филипп Шамсиев](https://htmlacademy.ru/profile/id70260).
+* Наставник: [Филипп Шамсиев](https://up.htmlacademy.ru/htmlcss/20/user/id70260).
 
 ---
 
