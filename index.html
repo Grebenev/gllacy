@@ -151,14 +151,14 @@
         </section>
         <section class="contacts">
           <h2 class="visually-hidden">Контакты</h2>
-          <div class="contacts">
-            <div class="contacts__location">
-              <div class="contacts__title">Адрес главного офиса и офлайн-магазина:</div>
-              <div class="contacts__text">ул. Большая Конюшенная 19/8, Санкт-Петербург</div>
+          <div class="contact">
+            <div class="contact__location">
+              <div class="contact__title">Адрес главного офиса и офлайн-магазина:</div>
+              <div class="contact__text">ул. Большая Конюшенная 19/8, Санкт-Петербург</div>
             </div>
-            <div class="contacts__phone">
-              <div class="contacts__phone-title">Для заказов по телефону:</div>
-              <div class="contacts__phone-text"><span>8 812 450-25-25</span><br>
+            <div class="contact__phone">
+              <div class="contact__phone-title">Для заказов по телефону:</div>
+              <div class="contact__phone-text"><span>8 812 450-25-25</span><br>
                 (с 10 до 20 ежедневно)</div>
             </div>
             <button class="button">Форма обратной связи</button>
@@ -206,6 +206,93 @@
           <p>Сделано в <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
         </div>
       </footer>
+      <section class="search modal">
+        <h2 class="visually-hidden">Поиск</h2>
+        <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
+          <input class="search__input" type="text" name="search"  placeholder="Что ищем?">
+        </form>
+      </section>
+      <section class="entrance modal">
+        <h2 class="visually-hidden">Личный кабинет</h2>
+        <form class="entrance__form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="login">Логин</label>
+            <input class="entrance__user" id="login" type="text" name="login" placeholder="Электронная почта">
+          </p>
+          <p>
+            <label class="visually-hidden" for="password">Логин</label>
+            <input class="entrance__password" id="password" type="password" name="password" placeholder="Пароль">
+          </p>
+          <p>
+            <button class="button" type="submit">Войти</button>
+            <a class="entrance__restore" href="#">Забыли пароль?</a>
+            <a class="entrance__registration" href="#">Новая регистрация</a>
+          </p>
+        </form>
+      </section>
+      <section class="feedback modal">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <b>Мы обязательно вам ответим!</b>
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="feedback__name">Логин</label>
+            <input class="feedback__name" id="feedback__name" type="text" name="name" placeholder="Как вас зовут?">
+          </p>
+          <p>
+            <label class="visually-hidden" for="feedback__email">Почта</label>
+            <input class="feedback__email" id="feedback__email" type="email" name="email" placeholder="Ваша почта для ответа?">
+          </p>
+          <p>
+            <label class="visually-hidden" for="feedback_message">Сообщение</label>
+            <input class="feedback_message" id="feedback_message" type="text" name="text" placeholder="Напишите что-нибудь...">
+          </p>
+          <p>
+            <button class="button" type="submit">Войти</button>
+          </p>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
+      </section>
+      <section class="cart modal">
+        <h2 class="visually-hidden">Форма заказа</h2>
+        <table class="cart__table">
+          <tr class="card__row">
+            <td  class="cart__remove">
+              <button type="button">
+                <span class="visually-hidden">Удалить</span>
+              </button>
+            </td>
+            <td  class="cart__image">
+              <img src="#" width="33" height="33" alt="Пломбир с апельсиновым джемом">
+            </td>
+            <td class="cart__link">
+              <a href="#">Пломбир с апельсиновым джемом</a>
+            </td>
+            <td class="cart__weight">1,5 кг x </td>
+            <td class="cart__price">200 руб.</td>
+            <td class="cart__sum">300 руб.</td>
+          </tr>
+          <tr class="card__row">
+            <td class="cart__remove">
+              <button type="button">
+                <span class="visually-hidden">Удалить</span>
+              </button>
+            </td>
+            <td class="cart__image">
+              <img src="#" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
+            </td>
+            <td class="cart__link">
+              <a href="#">Клубничный пломбир с присыпкой из белого шоколада</a>
+            </td>
+            <td class="cart__weight">1,5 кг x </td>
+            <td class="cart__price">300 руб.</td>
+            <td class="cart__sum">450 руб.</td>
+          </tr>
+          <tr class="card__row">
+            <td class="cart__total" colspan="6">Итого: 750 руб.</td>
+          </tr>
+        </table>
+        <a class="button" href="#">Оформить заказ</a>
+      </section>
     </div>
   </body>
 </html>
