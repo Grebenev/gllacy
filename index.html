@@ -8,46 +8,46 @@
     <div class="page-container">
       <header class="header">
         <div class="header__logo">
-          <img class="header__image" src="img/main-logo.svg"  width="154" height="64" alt="Логотип">
+          <img class="header__image" src="img/main-logo.svg" width="154" height="64" alt="Логотип">
         </div>
         <nav class="navigation">
-          <ul class="navigation__menu">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Каталог</a>
-              <ul class="navigation__submenu">
-                <li class="navigation__submenu-item">
-                  <a class="navigation__submenu-link" href="#">Каталог</a>
+          <ul class="menu">
+            <li class="menu__item">
+              <a class="menu__link" href="#">Каталог</a>
+              <ul class="submenu">
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Каталог</a>
                 </li>
-                <li class="navigation__submenu-item">
-                  <a class="navigation__submenu-link" href="#">Новинки</a>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Новинки</a>
                 </li>
-                <li class="navigation__submenu-item">
-                  <a class="navigation__submenu-link" href="#">Сливочное</a>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Сливочное</a>
                 </li>
-                <li class="navigation__submenu-item">
-                  <a class="navigation__submenu-link" href="#">Щербеты</a>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Щербеты</a>
                 </li>
-                <li class="navigation__submenu-item">
-                  <a class="navigation__submenu-link" href="#">Фруктовый</a>
+                <li class="submenu__item">
+                  <a class="submenu__link" href="#">Фруктовый</a>
                 </li>
               </ul>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">Доставка и оплата</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">Доставка и оплата</a>
             </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#">О Компании</a>
+            <li class="menu__item">
+              <a class="menu__link" href="#">О Компании</a>
             </li>
           </ul>
-          <ul class="user-navigation__menu">
-             <li class="user-navigation__item">
-               <a class="user-navigation__link user-navigation__link--search" href="#">Поиск</a>
+          <ul class="user-menu">
+             <li class="user-menu__item">
+               <a class="user-menu__link user-menu__link--search" href="#">Поиск</a>
              </li>
-             <li class="user-navigation__item">
-               <a class="user-navigation__link user-navigation__link--entrance" href="#">Вход</a>
+             <li class="user-menu__item">
+               <a class="user-menu__link user-menu__link--entrance" href="#">Вход</a>
              </li>
-             <li class="user-navigation__item">
-               <a class="user-navigation__link user-navigation__link--cart" href="#">Корзина</a>
+             <li class="user-menu__item">
+               <a class="user-menu__link user-menu__link--cart" href="#">Корзина</a>
              </li>
            </ul>
         </nav>
@@ -86,6 +86,7 @@
                   <span class="bestsellers__weight">кг</span>
                 </div>
                 <a class="bestsellers__link" href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+                <button class="button">Быстрый просмотр</button>
               </div>
             </li>
             <li class="bestsellers__item">
@@ -97,6 +98,7 @@
                   <span class="bestsellers__weight">кг</span>
                 </div>
                 <a class="bestsellers__link" href="#">Сливочно-кофейное с кусочками шоколада</a>
+                <button class="button">Быстрый просмотр</button>
               </div>
             </li>
             <li class="bestsellers__item">
@@ -108,6 +110,7 @@
                   <span class="bestsellers__weight">кг</span>
                 </div>
                 <a class="bestsellers__link" href="#" >Сливочно-клубничное с присыпкой из белого шоколада</a>
+                <button class="button">Быстрый просмотр</button>
               </div>
             </li>
             <li class="bestsellers__item">
@@ -119,6 +122,7 @@
                   <span class="bestsellers__weight">кг</span>
                 </div>
                 <a class="bestsellers__link" href="#">Сливочное крем-брюле с карамельной подливкой</a>
+                <button class="button">Быстрый просмотр</button>
               </div>
             </li>
           </ul>
@@ -136,14 +140,15 @@
           <section class="blog">
             <h2 class="visually-hidden">Наш блог</h2>
             <p class="blog__titile">Новое в нашем блоге</p>
-            <p class="blog__text">10 способов сервировки фруктовых щербетов к столу</p>
+            <p class="blog__text"><a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
           </section>
           <section class="subscribe">
             <h2 class="visually-hidden">Наша рассылка</h2>
             <p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscribe__form" action="post">
-            <input class="subscribe__send" type="email" name="send" placeholder="Электронная почта">
-            <button class="button" type="submit">Отправить</button>
+              <input class="subscribe__send" type="email" name="send" placeholder="Электронная почта">
+              <button class="button" type="submit">Отправить</button>
+            </form>
           </section>
         </div>
         <section class="map">
@@ -158,10 +163,10 @@
             </div>
             <div class="contact__phone">
               <div class="contact__phone-title">Для заказов по телефону:</div>
-              <div class="contact__phone-text"><span>8 812 450-25-25</span><br>
-                (с 10 до 20 ежедневно)</div>
+              <div class="contact__phone-text"><span>8 812 450-25-25</span>(с 10 до 20 ежедневно)</div>
             </div>
             <button class="button">Форма обратной связи</button>
+          </div>
         </section>
       </main>
       <footer class="footer">
