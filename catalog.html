@@ -64,8 +64,71 @@
         </div>
       </header>
       <main>
-
-
+        <h1>Сливочное мороженое</h1>
+        <section class="filters">
+          <h2 class="visually-hidden">Фильтр товаров</h2>
+          <form  class="filters__form" action="https://echo.htmlacademy.ru" method="get">
+            <fieldset class="sorting">
+              <legend>Сортировка:</legend>
+              <select class="sorting__list" name="sorting__list">
+                <option class="sorting__item" value="">по популярности</option>
+                <option class="sorting__item" value="">сначала недорогие</option>
+                <option class="sorting__item" value="">сначала дорогие</option>
+                <option class="sorting__item" value="">по жирности</option>
+              </select>
+            </fieldset>
+            <fieldset class="price">
+              <legend>Цена: 100 руб. - 500 руб.</legend>
+            </fieldset>
+            <fieldset class="fatiness">
+              <legend>Жирность:</legend>
+              <ul class="fatiness__list">
+                <li class="fatiness__item">
+                  <input class="visually-hidden fatiness__input fatiness__input--radio" type="radio" name="radio" id="zero-percent">
+                  <label for="zero-percent">0%</label>
+                </li>
+                <li class="fatiness__item">
+                  <input class="visually-hidden fatiness__input fatiness__input--radio" type="radio" name="radio" id="ten-percent">
+                  <label for="ten-percent">10%</label>
+                </li>
+                <li class="fatiness__item">
+                  <input class="visually-hidden fatiness__input fatiness__input--radio" type="radio" name="radio" id="thirty-percent">
+                  <label for="thirty-percent">30%</label>
+                </li>
+                <li class="fatiness__item">
+                  <input class="visually-hidden fatiness__input fatiness__input--radio" type="radio" name="radio" id="over-thirty-percent" disabled>
+                  <label for="over-thirty-percent">выше 30%</label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset class="fillers">
+              <legend>Наполнители:</legend>
+              <ul class="fillers__list">
+                <li class="fillers__item">
+                  <input class="visually-hidden fillers__input fillers__input--checkbox" type="checkbox" name="chocolate" id="chocolate">
+                  <label for="chocolate">шоколадные</label>
+                </li>
+                <li class="fillers__item">
+                  <input class="visually-hidden fillers__input fillers__input--checkbox" type="checkbox" name="sugar" id="sugar">
+                  <label for="sugar">сахарные присыпки</label>
+                </li>
+                <li class="fillers__item">
+                  <input class="visually-hidden fillers__input fillers__input--checkbox" type="checkbox" name="fruts" id="fruts">
+                  <label for="fruts">фрукты</label>
+                </li>
+                <li class="fillers__item">
+                  <input class="visually-hidden fillers__input fillers__input--checkbox" type="checkbox" name="syrups" id="syrups">
+                  <label for="syrups">сиропы</label>
+                </li>
+                <li class="fillers__item">
+                  <input class="visually-hidden fillers__input fillers__input--checkbox" type="checkbox" name="jams" id="jams" disabled>
+                  <label for="jams">джемы</label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" class="button filters--button">Применить</button>
+          </form>
+        </section>
       </main>
       <footer class="footer">
         <div class="social">
