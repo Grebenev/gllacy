@@ -3,6 +3,9 @@
   <head>
      <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body class="page">
     <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
@@ -182,6 +185,7 @@
           </ul>
         </section>
         <section class="description">
+          <h2 class="visually-hidden">О магазине</h2>
           <b class="description__title">Магазин Глэйси &#8212; это онлайн- и офлайн- магазин по продаже мороженого собственного производства на развес</b>
           <ul class="description__list">
             <li class="description__item">Все наше мороженное изготавливается на собственном производстве, с использованием современного оборудования и проверенных временем технологий.</li>
@@ -190,21 +194,21 @@
             <li class="description__item">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
           </ul>
         </section>
-        <div class="block">
-          <section class="blog advantage__item">
+        <ul class="advantage__list">
+          <li class="advantage__item">
             <h2 class="visually-hidden">Наш блог</h2>
             <p class="blog__titile">Новое в нашем блоге</p>
             <p class="blog__text"><a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
-          </section>
-          <section class="subscribe advantage__item">
+          </li>
+          <li class="advantage__item">
             <h2 class="visually-hidden">Наша рассылка</h2>
             <p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscribe__form" action="post">
               <input class="subscribe__send" type="email" name="send" placeholder="Электронная почта">
               <button class="button" type="submit">Отправить</button>
             </form>
-          </section>
-        </div>
+          </li>
+        </ul>
         <section class="map">
           <h2 class="visually-hidden">Схема проезда</h2>
           <div class="contacts">
@@ -216,7 +220,7 @@
               <div class="contacts__phone-title">Для заказов по телефону:</div>
               <div class="contacts__phone-text"><span>8 812 450-25-25</span>(с 10 до 20 ежедневно)</div>
             </div>
-            <a class="button" type="button">Форма обратной связи</a>
+            <a class="button" href="#">Форма обратной связи</a>
           </div>
         </section>
 
