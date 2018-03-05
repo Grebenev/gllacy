@@ -5,6 +5,9 @@
     <title>HTML Academy: Глейси</title>
   </head>
   <body class="page">
+    <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
+    <input class="visually-hidden" type="radio" id="product-2" name="toggle">
+    <input class="visually-hidden" type="radio" id="product-3" name="toggle">
     <div class="page-container">
       <header class="header">
         <div class="header__logo">
@@ -84,6 +87,28 @@
         </div>
       </header>
       <main>
+        <section class="slider">
+          <h2 class="visually-hidden">Слайдер</h2>
+          <div class="slider-controls">
+            <label for="product-1">Первый</label> <!-- Чекбоксы выше -->
+            <label for="product-2">Второй</label>
+            <label for="product-3">Третий</label>
+          </div>
+          <ul class="slider-list">
+            <li class="slider-item slide" id="slide1">
+              <h3 class="slide-title">Крем-брюле и пломбир с малиновым джемом</h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide2">
+              <h3 class="slide-title">Шоколадный пломбир и лимонный сорбет</h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+            <li class="slider-item slide" id="slide3">
+              <h3 class="slide-title">Пломбир с помадкой и клубничный щербет</h3>
+              <a class="button slide-button" href="#">Давайте оба!</a>
+            </li>
+          </ul>
+        </section>
         <section class="advantage">
           <h2 class="visually-hidden">Преимущества</h2>
           <ul class="advantage__list">
@@ -166,12 +191,12 @@
           </ul>
         </section>
         <div class="block">
-          <section class="blog">
+          <section class="blog advantage__item">
             <h2 class="visually-hidden">Наш блог</h2>
             <p class="blog__titile">Новое в нашем блоге</p>
             <p class="blog__text"><a class="blog__link" href="#">10 способов сервировки фруктовых щербетов к столу</a></p>
           </section>
-          <section class="subscribe">
+          <section class="subscribe advantage__item">
             <h2 class="visually-hidden">Наша рассылка</h2>
             <p class="subscribe__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <form class="subscribe__form" action="post">
