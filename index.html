@@ -51,8 +51,8 @@
                <section class="search modal">
                  <h2 class="visually-hidden">Поиск</h2>
                  <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
-                 <label class="visually-hidden" for="search">Форма поиска</label>
-                 <input class="search__input" id="search" type="text" name="search"  placeholder="Что ищем?">
+                   <label class="visually-hidden" for="search">Форма поиска</label>
+                   <input class="search__input" id="search" type="search" name="search" placeholder="Что ищем?">
                    <button class="visually-hidden" type="submit"></button>
                  </form>
                </section>
@@ -72,8 +72,8 @@
                    </p>
                    <p>
                      <a class="button" href="#">Войти</a>
-                     <a class="entrance__restore" href="#">Забыли пароль?</a>
-                     <a class="entrance__registration" href="#">Новая регистрация</a>
+                     <a class="entrance__link" href="#">Забыли пароль?</a>
+                     <a class="entrance__link" href="#">Новая регистрация</a>
                    </p>
                  </form>
                </section>
@@ -204,7 +204,7 @@
             </li>
             <li class="actions__item">
               <p class="actions__text">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
-              <form class="actions__form" action="post">
+              <form class="actions__form" action="https://echo.htmlacademy.ru" method="post">
                 <input class="actions__send" type="email" name="send" placeholder="Электронная почта">
                 <button class="button" type="submit">Отправить</button>
               </form>
@@ -274,6 +274,7 @@
       <section class="feedback modal">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <b>Мы обязательно вам ответим!</b>
+        <button class="modal-close" type="button">Закрыть</button>
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label class="visually-hidden" for="name">Логин</label>
@@ -291,7 +292,6 @@
             <button class="button" type="submit">Отправить</button>
           </p>
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
       </section>
     </div>
   </body>
