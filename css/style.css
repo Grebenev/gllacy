@@ -346,10 +346,12 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-  background-image: url("/img/map.jpg");
+  background-image: url("../img/map.jpg");
 }
 
 .contacts {
+  width: 302px;
+  height: 305px;
   color: #323232;
   background-color: #ffffff;
 }
