@@ -7,7 +7,6 @@ body {
   line-height: 22px;
   font-weight: 400;
   color: #ffffff;
-  background-color: #cccccc;
 }
 
 *,
@@ -145,23 +144,22 @@ input[type="radio"].visually-hidden {
 
 .navigation {
   display: flex;
+  flex-grow: 1;
   align-items: center;
   font-size: 16px;
   line-height: 18px;
   font-weight: 700;
 }
 
-.menu__item:first-child {
-  position: relative;
-}
-
 .menu {
   display: flex;
   margin: 0;
   padding: 0;
+  margin-right: auto;
 }
 
 .menu__item {
+  position: relative;
   padding: 7px 0;
 }
 
@@ -247,7 +245,6 @@ input[type="radio"].visually-hidden {
   display: flex;
   margin: 0;
   padding: 0;
-  margin-left: 380px;
 }
 
 .user-menu__item {
@@ -588,6 +585,10 @@ input[type="radio"].visually-hidden {
   display: block;
 }
 
+.catalog__item .button {
+  display: none;
+}
+
 .catalog__image-wrapper {
   margin-bottom: 10px;
 }
@@ -631,6 +632,7 @@ input[type="radio"].visually-hidden {
 }
 
 .description__wrapper {
+  padding: 26px 20px 4px;
   width: 1146px;
   min-height: 306px;
   background-color: #ede2ca;
@@ -641,6 +643,8 @@ input[type="radio"].visually-hidden {
 }
 
 .description__title {
+  display: block;
+  margin-bottom: 21px;
   font-size: 24px;
   line-height: 30px;
   font-weight: 500;
@@ -648,20 +652,64 @@ input[type="radio"].visually-hidden {
 }
 
 .description__list {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 0;
   list-style: none;
 }
 
 .description__item {
+  position: relative;
+  padding-top: 1px;
+  padding-left: 56px;
+  margin-bottom: 22px;
   color: #323232;
 }
 
+.description__item:nth-child(even) {
+  width: 530px;
+}
+
+.description__item:nth-child(odd) {
+  width: 540px;
+  margin-right: 25px;
+}
+
+.description__item:nth-child(1)::before {
+  background-image: url("../img/ice-cream.svg");
+}
+
+.description__item:nth-child(2)::before {
+  background-image: url("../img/cow.svg");
+}
+
+.description__item:nth-child(3)::before {
+  background-image: url("../img/eco.svg");
+}
+
+.description__item:nth-child(4)::before {
+  background-image: url("../img/thermometer.svg");
+}
+
+.description__item::before {
+  content: "";
+  position: absolute;
+  top: -12px;
+  left: 0;
+  display: block;
+  width: 49px;
+  height: 49px;
+}
+
 .map {
-  width: 100%;
+  position: relative;
   height: 430px;
   background-color: #ebe4c9;
   background-image: url("../img/map.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .contacts {
