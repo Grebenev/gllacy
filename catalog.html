@@ -52,8 +52,10 @@
                  <section class="search modal">
                    <h2 class="visually-hidden">Поиск</h2>
                    <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
-                     <label class="visually-hidden" for="search">Форма поиска</label>
-                     <input class="search__input input" id="search" type="search" name="search" placeholder="Что ищем?">
+                     <label>
+                        <span class="visually-hidden" for="search">Форма поиска</span>
+                        <input class="search__input input" id="search" type="search" name="search" placeholder="Что ищем?">
+                      </label>
                      <button class="visually-hidden" type="submit"></button>
                    </form>
                  </section>
@@ -67,18 +69,24 @@
                    <h2 class="visually-hidden">Личный кабинет</h2>
                    <form class="entrance__form" action="https://echo.htmlacademy.ru" method="post">
                      <p>
-                       <label class="visually-hidden" for="login">Логин</label>
-                       <input class="entrance__user input" id="login" type="text" name="login" placeholder="Электронная почта">
+                       <label>
+                         <span class="visually-hidden" for="login">Электронная почта</span>
+                         <input class="entrance__user input" id="login" type="text" name="login" placeholder="Электронная почта">
+                        </label>
                      </p>
                      <p>
-                       <label class="visually-hidden" for="password">Логин</label>
-                       <input class="entrance__password input" id="password" type="password" name="password" placeholder="Пароль">
+                       <label>
+                         <span class="visually-hidden" for="password">Пароль</span>
+                         <input class="entrance__password input" id="password" type="password" name="password" placeholder="Пароль">
+                        </label>
                      </p>
-                     <p>
+                     <div class="entrance__wrapper">
                        <a class="button" href="#">Войти</a>
-                       <a class="entrance__link" href="#">Забыли пароль?</a>
-                       <a class="entrance__link" href="#">Новая регистрация</a>
-                     </p>
+                       <p>
+                         <a class="entrance__link link--black" href="#">Забыли пароль?</a>
+                         <a class="entrance__link link--black" href="#">Новая регистрация</a>
+                       </p>
+                      </div>
                    </form>
                  </section>
                </li>
@@ -91,9 +99,9 @@
                    <h2 class="visually-hidden">Форма заказа</h2>
                    <table class="cart__table">
                      <caption class="visually-hidden">Вы выбрали:</caption>
-                     <tr class="card__row">
+                     <tr class="cart__row">
                        <td  class="cart__remove">
-                         <button type="button"><span class="visually-hidden">Удалить</span>x</button>
+                         <button class="cart__remove-button" type="button"><span class="visually-hidden">Удалить</span>X</button>
                        </td>
                        <td  class="cart__image">
                          <img src="img/product-small1.jpg" width="33" height="33" alt="Пломбир с апельсиновым джемом">
@@ -103,9 +111,9 @@
                        <td class="cart__text cart__text--gray">200 руб.</td>
                        <td class="cart__text">300 руб.</td>
                      </tr>
-                     <tr class="card__row">
+                     <tr class="cart__row">
                        <td class="cart__remove">
-                         <button type="button"><span class="visually-hidden">Удалить</span>x</button>
+                         <button class="cart__remove-button" type="button"><span class="visually-hidden">Удалить</span>X</button>
                        </td>
                        <td class="cart__image">
                          <img src="img/product-small2.jpg" width="33" height="33" alt="Клубничный пломбир с присыпкой из белого шоколада">
@@ -115,11 +123,14 @@
                        <td class="cart__text cart__text--gray">300 руб.</td>
                        <td class="cart__text">450 руб.</td>
                      </tr>
-                     <tr class="card__row">
+                     <tr class="cart__row">
                        <td class="cart__total" colspan="6">Итого: 750 руб.</td>
                      </tr>
                    </table>
-                   <a class="button" href="#">Оформить заказ</a>
+                   <div class="cart__button">
+                     <a class="button" href="#">Оформить заказ</a>
+                   </div>
+
                  </section>
                </li>
              </ul>

@@ -55,8 +55,10 @@
                  <section class="search modal">
                    <h2 class="visually-hidden">Поиск</h2>
                    <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
-                     <label class="visually-hidden" for="search">Форма поиска</label>
-                     <input class="search__input input" id="search" type="search" name="search" placeholder="Что ищем?">
+                     <label>
+                        <span class="visually-hidden" for="search">Форма поиска</span>
+                        <input class="search__input input" id="search" type="search" name="search" placeholder="Что ищем?">
+                      </label>
                      <button class="visually-hidden" type="submit"></button>
                    </form>
                  </section>
@@ -70,18 +72,24 @@
                    <h2 class="visually-hidden">Личный кабинет</h2>
                    <form class="entrance__form" action="https://echo.htmlacademy.ru" method="post">
                      <p>
-                       <label class="visually-hidden" for="login">Логин</label>
-                       <input class="entrance__user input" id="login" type="text" name="login" placeholder="Электронная почта">
+                       <label>
+                         <span class="visually-hidden" for="login">Электронная почта</span>
+                         <input class="entrance__user input" id="login" type="text" name="login" placeholder="Электронная почта">
+                        </label>
                      </p>
                      <p>
-                       <label class="visually-hidden" for="password">Логин</label>
-                       <input class="entrance__password input" id="password" type="password" name="password" placeholder="Пароль">
+                       <label>
+                         <span class="visually-hidden" for="password">Пароль</span>
+                         <input class="entrance__password input" id="password" type="password" name="password" placeholder="Пароль">
+                        </label>
                      </p>
-                     <p>
+                     <div class="entrance__wrapper">
                        <a class="button" href="#">Войти</a>
-                       <a class="entrance__link" href="#">Забыли пароль?</a>
-                       <a class="entrance__link" href="#">Новая регистрация</a>
-                     </p>
+                       <p>
+                         <a class="entrance__link link--black" href="#">Забыли пароль?</a>
+                         <a class="entrance__link link--black" href="#">Новая регистрация</a>
+                       </p>
+                      </div>
                    </form>
                  </section>
                </li>
@@ -239,7 +247,7 @@
             <div class="contacts__title">
               <span class="contacts__text">8 812 450-25-25</span><br>(с 10 до 20 ежедневно)</div>
           </div>
-          <a class="button" href="#">Форма обратной связи</a>
+          <a class="button contacts__button" href="feedback-form.html">Форма обратной связи</a>
         </div>
       </section>
       <div class="page__container--center">
@@ -285,29 +293,40 @@
               <p>Сделано в <a class="copyright__link" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2017</p>
             </div>
         </footer>
-        <section class="feedback modal">
-          <h2 class="visually-hidden">Форма обратной связи</h2>
-          <b class="feedback__title">Мы обязательно вам ответим!</b>
-          <button class="modal-close" type="button">Закрыть</button>
-          <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
-              <label class="visually-hidden" for="name">Логин</label>
-              <input class="feedback__name input" id="name" type="text" name="name" placeholder="Как вас зовут?">
-            </p>
-            <p>
-              <label class="visually-hidden" for="email">Почта</label>
-              <input class="feedback__email input" id="email" type="email" name="email" placeholder="Ваша почта для ответа?">
-            </p>
-            <p>
-              <label class="visually-hidden" for="message">Сообщение</label>
-              <textarea class="feedback__message input" id="message" placeholder="Напишите что-нибудь..."></textarea>
-            </p>
-            <p>
-              <button class="button" type="submit">Отправить</button>
-            </p>
-          </form>
-        </section>
       </div>
     </div>
+    <div class="modal__overlay">
+      <section class="feedback modal">
+        <h2 class="visually-hidden">Форма обратной связи</h2>
+        <b class="feedback__title">Мы обязательно вам ответим!</b>
+        <button class="feedback__close" type="button"></button>
+        <span class="visually-hidden">Закрыть</span>
+        <!-- <span class="feedback__close"></span> -->
+        <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label>
+              <span class="visually-hidden" for="name">Логин</span>
+              <input class="feedback__name input" id="name" type="text" name="name" placeholder="Как вас зовут?">
+            </label>
+          </p>
+          <p>
+            <label>
+              <span class="visually-hidden" for="email">Почта</span>
+              <input class="feedback__email input" id="email" type="email" name="email" placeholder="Ваша почта для ответа?">
+            </label>
+          </p>
+          <p>
+            <label>
+              <span class="visually-hidden" for="message">Сообщение</span>
+              <textarea class="feedback__message input" id="message" placeholder="Напишите что-нибудь..."></textarea>
+            </label>
+          </p>
+          <p>
+            <button class="button" type="submit">Отправить</button>
+          </p>
+        </form>
+      </section>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>
