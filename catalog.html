@@ -53,7 +53,7 @@
                    <h2 class="visually-hidden">Поиск</h2>
                    <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
                      <label>
-                        <span class="visually-hidden" for="search">Форма поиска</span>
+                        <span class="visually-hidden">Форма поиска</span>
                         <input class="search__input input" id="search" type="search" name="search" placeholder="Что ищем?">
                       </label>
                      <button class="visually-hidden" type="submit"></button>
@@ -70,13 +70,13 @@
                    <form class="entrance__form" action="https://echo.htmlacademy.ru" method="post">
                      <p>
                        <label>
-                         <span class="visually-hidden" for="login">Электронная почта</span>
+                         <span class="visually-hidden">Электронная почта</span>
                          <input class="entrance__user input" id="login" type="text" name="login" placeholder="Электронная почта">
                         </label>
                      </p>
                      <p>
                        <label>
-                         <span class="visually-hidden" for="password">Пароль</span>
+                         <span class="visually-hidden">Пароль</span>
                          <input class="entrance__password input" id="password" type="password" name="password" placeholder="Пароль">
                         </label>
                      </p>
@@ -389,21 +389,13 @@
             </ul>
           </section>
           <ul class="pagination">
-            <li class="pagination__item pagination__item--disable">
-              <a class="pagination__link">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" transform="rotate(180)" viewBox="0 0 8 12"><path  fill="#fff" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
-              </a>
-            </li>
+            <li class="pagination__item pagination__item--disable"><a class="pagination__link pagination__link--previous"></a></li>
             <li class="pagination__item pagination__item--current"><a class="pagination__link">1</a></li>
             <li class="pagination__item"><a class="pagination__link" href="#">2</a></li>
             <li class="pagination__item"><a class="pagination__link" href="#">3</a></li>
             <li class="pagination__item"><a class="pagination__link" href="#">4</a></li>
             <li class="pagination__item"><a class="pagination__link" href="#">5</a></li>
-            <li class="pagination__item">
-              <a class="pagination__link" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12"><path  fill="#fff" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/></svg>
-              </a>
-            </li>
+            <li class="pagination__item"><a class="pagination__link pagination__link--next" href="#"></a></li>
           </ul>
         </main>
         <footer class="footer">

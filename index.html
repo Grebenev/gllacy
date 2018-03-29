@@ -56,7 +56,7 @@
                    <h2 class="visually-hidden">Поиск</h2>
                    <form class="search__form" action="https://echo.htmlacademy.ru" method="get">
                      <label>
-                        <span class="visually-hidden" for="search">Форма поиска</span>
+                        <span class="visually-hidden">Форма поиска</span>
                         <input class="search__input input" id="search" type="search" name="search" placeholder="Что ищем?">
                       </label>
                      <button class="visually-hidden" type="submit"></button>
@@ -73,13 +73,13 @@
                    <form class="entrance__form" action="https://echo.htmlacademy.ru" method="post">
                      <p>
                        <label>
-                         <span class="visually-hidden" for="login">Электронная почта</span>
+                         <span class="visually-hidden">Электронная почта</span>
                          <input class="entrance__user input" id="login" type="text" name="login" placeholder="Электронная почта">
                         </label>
                      </p>
                      <p>
                        <label>
-                         <span class="visually-hidden" for="password">Пароль</span>
+                         <span class="visually-hidden">Пароль</span>
                          <input class="entrance__password input" id="password" type="password" name="password" placeholder="Пароль">
                         </label>
                      </p>
@@ -235,7 +235,7 @@
           </section>
         </main>
       </div>
-      <section class="map">
+      <section class="map" id="map">
         <h2 class="visually-hidden">Схема проезда</h2>
         <div class="contacts page__container--center">
           <div class="contacts__location">
@@ -301,23 +301,22 @@
         <b class="feedback__title">Мы обязательно вам ответим!</b>
         <button class="feedback__close" type="button"></button>
         <span class="visually-hidden">Закрыть</span>
-        <!-- <span class="feedback__close"></span> -->
         <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label>
-              <span class="visually-hidden" for="name">Логин</span>
+              <span class="visually-hidden">Логин</span>
               <input class="feedback__name input" id="name" type="text" name="name" placeholder="Как вас зовут?">
             </label>
           </p>
           <p>
             <label>
-              <span class="visually-hidden" for="email">Почта</span>
+              <span class="visually-hidden">Почта</span>
               <input class="feedback__email input" id="email" type="email" name="email" placeholder="Ваша почта для ответа?">
             </label>
           </p>
           <p>
             <label>
-              <span class="visually-hidden" for="message">Сообщение</span>
+              <span class="visually-hidden">Сообщение</span>
               <textarea class="feedback__message input" id="message" placeholder="Напишите что-нибудь..."></textarea>
             </label>
           </p>
@@ -327,6 +326,7 @@
         </form>
       </section>
     </div>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/script.js"></script>
   </body>
 </html>
