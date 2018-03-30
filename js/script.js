@@ -27,12 +27,11 @@ function init() {
         [0, 0],
         [80, 140]
       ],
-      iconImageHref: "/img/pin.svg",
+      iconImageHref: "img/pin.svg",
       iconImageSize: [80, 140],
       iconImageOffset: [-40, -90],
     });
 
-  myMap.geoObjects.add(myPlacemark1)
-    .add(myPlacemark2)
-    .add(myPlacemark3);
+  myMap.geoObjects.add(myPlacemark1);
+
 }
