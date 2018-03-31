@@ -1020,6 +1020,23 @@ input[type="radio"].visually-hidden {
   border: 3px solid rgba(255, 255, 255, 0.5);
   opacity: 0.8;
   border-radius: 50%;
+  background-repeat: no-repeat;
+}
+
+.social__link--tw {
+  background-image: url("../img/twitter.svg");
+}
+
+.social__link--inst {
+  background-image: url("../img/fb.svg");
+}
+
+.social__link--fb {
+  background-image: url("../img/instagram.svg");
+}
+
+.social__link--vk {
+  background-image: url("../img/vk.svg");
 }
 
 .social__link:hover {
@@ -1027,9 +1044,10 @@ input[type="radio"].visually-hidden {
   border-color: rgba(255, 255, 255, 0.7);
 }
 
-.social__link:active path {
-  fill: #e9e9e9;
+.social__link:active {
+  opacity: 1;
   border-color: rgba(255, 255, 255, 0.7);
+  box-shadow: inset 0 2px 0px 1px #888888;
 }
 
 .reference__list {
