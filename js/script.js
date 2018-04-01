@@ -6,6 +6,7 @@ button_click.addEventListener("click", function(evt) {
   evt.preventDefault();
   feedback.classList.add("modal__overlay--on");
 });
+
 feedback_close.addEventListener("click", function(evt) {
   evt.preventDefault();
   feedback.classList.remove("modal__overlay--on");
@@ -17,12 +18,12 @@ function init() {
   var myMap = new ymaps.Map("map", {
       center: [59.938631, 30.323055],
       zoom: 15
-    }),
+}),
 
-    myPlacemark1 = new ymaps.Placemark([59.938631, 30.323055], {
-      balloonContent: "ул. Большая Конюшенная 19/8, Санкт-Петербург"
-    }, {
-      iconLayout: "default#image",
+myPlacemark1 = new ymaps.Placemark([59.938631, 30.323055], {
+  balloonContent: "ул. Большая Конюшенная 19/8, Санкт-Петербург"
+}, {
+iconLayout: "default#image",
       iconImageClipRect: [
         [0, 0],
         [80, 140]
@@ -30,8 +31,7 @@ function init() {
       iconImageHref: "img/pin.svg",
       iconImageSize: [80, 140],
       iconImageOffset: [-40, -90],
-    });
+});
 
-  myMap.geoObjects.add(myPlacemark1);
-
+myMap.geoObjects.add(myPlacemark1);
 }
