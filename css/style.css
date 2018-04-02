@@ -50,7 +50,7 @@ input[type="radio"].visually-hidden {
   background: linear-gradient(to bottom, #9db1a5 30%, #849d8f 100%);
 }
 
-.page__container--center {
+.page__center {
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
