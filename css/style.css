@@ -977,8 +977,7 @@ input[type="radio"].visually-hidden {
   width: 1146px;
   min-height: 306px;
   background-color: #ede2ca;
-  background-image: url("../img/wafer_bg.jpg");
-  background-position: 110px;
+  background-image: url("../img/frame.jpg");
   background-repeat: repeat;
   border-radius: 15px;
 }
